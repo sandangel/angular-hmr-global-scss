@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "hello-world"
+    "name": "hello-world",
+    "ejected": true
   },
   "apps": [
     {
@@ -21,10 +22,16 @@
       "styles": [
         "styles.scss"
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "../node_modules"
+        ]
+      },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
+        "hmr": "environments/environment.hmr.ts",
         "prod": "environments/environment.prod.ts"
       }
     }
@@ -55,6 +62,7 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {}
+    "component": {
+    }
   }
 }

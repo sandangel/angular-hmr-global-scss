@@ -82,12 +82,12 @@
     "prefer-const": true,
     "quotemark": [
       true,
-      "single"
+      "double"
     ],
     "radix": true,
     "semicolon": [
       true,
-      "always"
+      "never"
     ],
     "triple-equals": [
       true,
